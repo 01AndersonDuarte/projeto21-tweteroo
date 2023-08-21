@@ -1,9 +1,18 @@
 export class User{
-    private userusername: string;
+    private username: string;
     private avatar: string;
 
     constructor(username: string, avatar: string){
-        this.userusername = username;
+        this.username = username;
         this.avatar = avatar;
     }
+    
+    public getUsername() : string {
+        return this.username;
+    }
+
+    public getAvatar() : string {
+        return this.avatar;
+    }
+    
 }
